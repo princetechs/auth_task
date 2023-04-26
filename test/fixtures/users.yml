@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  email: MyString
+  password_digest: MyString
+  two_factor_enabled: false
+  two_factor_token: MyString
+  two_factor_token_sent_at: 2023-04-26 12:07:32
+
+two:
+  name: MyString
+  email: MyString
+  password_digest: MyString
+  two_factor_enabled: false
+  two_factor_token: MyString
+  two_factor_token_sent_at: 2023-04-26 12:07:32

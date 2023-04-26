@@ -1,0 +1,8 @@
+
+<%= form_tag verify_2fa_path do %>
+  <div>
+    <label for="token">Enter your two-factor token:</label>
+    <%= text_field_tag :token, nil, required: true,class:"border border-gray-300 **invalid:border-red-500** p-2 rounded", type:"text", placeholder:"Enter a value" %>
+  </div>
+  <%= submit_tag "Verify",class:"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"%>
+<% end %>
