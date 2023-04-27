@@ -9,6 +9,8 @@ module SessionsHelper
    def check_session
     if session[:user_id]
       redirect_to dashboard_path
+    else
+      redirect_to not_authorized_path
     end
    end
 end

@@ -4,7 +4,7 @@ class UserMailer < ApplicationMailer
     def verify(user,code)
        @user=user
           mail(to: @user.email, 
-            subject: 'Welcome to My Awesome Site',
+            subject: 'Welcome to My Auth Site',
             body: "Your verify code is #{code}",
             content_type: "text/html")
     end
