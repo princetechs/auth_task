@@ -4,13 +4,12 @@ module SessionsHelper
     end
     def log_out
       session.delete(:user_id)   
+      session.delete(:user_mail)   
    end
    
    def check_session
     if session[:user_id]
       redirect_to dashboard_path
-    else
-      redirect_to not_authorized_path
     end
    end
 end

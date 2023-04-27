@@ -16,12 +16,15 @@ class SessionsController < ApplicationController
         redirect_to root_path
       end
     else
+      flash.now[:error] = "Incorrect email or password"
       render 'show'
     end
   end
 
   def verify_index
-    check_session
+    if !session[:user_mail]
+     redirect_to not_authorized_path
+    end
   end
 
   def verify_2fa

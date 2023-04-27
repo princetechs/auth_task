@@ -13,6 +13,9 @@
 
   <body>
     <main class="container mx-auto mt-28 px-5 flex">
+       <% if flash[:error] %>
+  <div class="alert alert-danger"><%= flash[:error] %></div>
+<% end %>
       <%= yield %>
     </main>
   </body>
